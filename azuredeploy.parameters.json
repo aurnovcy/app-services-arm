@@ -15,10 +15,10 @@
             "value": "<your spn tenant id>"
         },
         "windowsAdminUsername": {
-            "value": "arcdemo"
+            "value": "TailwindAdmin"
         },
         "windowsAdminPassword": {
-            "value": "ArcPassword123!!"
+            "value": "Tailwind123!"
         },
         "myIpAddress": {
             "value": "<your local public IP address>"
@@ -30,7 +30,7 @@
             "value": "1.19.11"
         },
         "dnsPrefix": {
-            "value": "arcappsvc"
+            "value": "tailwind"
         },
         "deployAppService": {
             "value": false
@@ -45,10 +45,10 @@
             "value": false
         },
         "templateBaseUrl": {
-            "value": "https://raw.githubusercontent.com/microsoft/azure_arc/main/azure_arc_app_services_jumpstart/aks/arm_template/"
+            "value": "https://raw.githubusercontent.com/aurnovcy/app-services-arm/main/"
         },
         "adminEmail": {
-            "value": "<youremail@email.com>"
+            "value": "aurnovc@microsoft.com"
         }
     }
 }
