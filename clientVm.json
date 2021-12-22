@@ -10,7 +10,7 @@
         },
         "vmName": {
             "type": "string",
-            "defaultValue": "Tailwind-Client",
+            "defaultValue": "Tailwind-App-Client",
             "metadata": {
                 "description": "The name of your Virtual Machine"
             }
@@ -54,21 +54,21 @@
         },
         "virtualNetworkName": {
             "type": "string",
-            "defaultValue": "Arc-App-VNet",
+            "defaultValue": "Tailwind-App-VNet",
             "metadata": {
                 "description": "Name of the VNET"
             }
         },
         "subnetName": {
             "type": "string",
-            "defaultValue": "Arc-App-Subnet",
+            "defaultValue": "Tailwind-App-Subnet",
             "metadata": {
                 "description": "Name of the subnet in the virtual network"
             }
         },
         "networkSecurityGroupName": {
             "type": "string",
-            "defaultValue": "Arc-App-Client-NSG",
+            "defaultValue": "Tailwind-App-Client-NSG",
             "metadata": {
                 "description": "Name of the Network Security Group"
             }
