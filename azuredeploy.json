@@ -54,7 +54,7 @@
     },
     "clusterName": {
       "type": "string",
-      "defaultValue":"Arc-App-AKS",
+      "defaultValue":"tailwind-k8s-a",
         "metadata": {
           "description": "The name of the Kubernetes cluster resource.."
       }
