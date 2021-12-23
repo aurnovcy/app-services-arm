@@ -10,14 +10,14 @@
         },
         "vmName": {
             "type": "string",
-            "defaultValue": "App-Client-A",
+            "defaultValue": "App-Client-1",
             "metadata": {
                 "description": "The name of your Virtual Machine"
             }
         },
         "windowsAdminUsername": {
             "type": "string",
-            "defaultValue": "TailwindAdmin",
+            "defaultValue": "LucerneAdmin",
             "metadata": {
                 "description": "Username for the Virtual Machine"
             }
@@ -26,7 +26,7 @@
             "type": "securestring",
             "minLength": 12,
             "maxLength": 123,
-            "defaultValue": "Tailwind123!",
+            "defaultValue": "Lucerne123!",
             "metadata": {
                 "description": "Password for Windows account. Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character. The value must be between 12 and 123 characters long."
             }
@@ -54,21 +54,21 @@
         },
         "virtualNetworkName": {
             "type": "string",
-            "defaultValue": "Tailwind-App-VNet",
+            "defaultValue": "Lucerne-App-VNet",
             "metadata": {
                 "description": "Name of the VNET"
             }
         },
         "subnetName": {
             "type": "string",
-            "defaultValue": "Tailwind-App-Subnet",
+            "defaultValue": "Lucerne-App-Subnet",
             "metadata": {
                 "description": "Name of the subnet in the virtual network"
             }
         },
         "networkSecurityGroupName": {
             "type": "string",
-            "defaultValue": "Tailwind-App-Client-NSG",
+            "defaultValue": "Lucerne-App-Client-NSG",
             "metadata": {
                 "description": "Name of the Network Security Group"
             }
@@ -76,7 +76,7 @@
         "resourceTags": {
             "type": "object",
             "defaultValue": {
-                "Company": "Tailwind Manufacturing"
+                "Company": "Lucerne Publishing"
             }
         },
         "spnClientId": {
@@ -105,7 +105,7 @@
         },
         "clusterName": {
             "type": "string",
-            "defaultValue":"Tailwind-Site1",
+            "defaultValue":"Lucerne-Site1",
             "metadata": {
                 "description": "The name of the Kubernetes cluster resource.."
             }
