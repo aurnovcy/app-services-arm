@@ -15,10 +15,10 @@
             "value": "<your spn tenant id>"
         },
         "windowsAdminUsername": {
-            "value": "TailwindAdmin"
+            "value": "LucerneModuleAdmin"
         },
         "windowsAdminPassword": {
-            "value": "Tailwind123!"
+            "value": "LucerneModule123!"
         },
         "myIpAddress": {
             "value": "<your local public IP address>"
@@ -30,7 +30,7 @@
             "value": "1.19.11"
         },
         "dnsPrefix": {
-            "value": "tailwind"
+            "value": "lucerne"
         },
         "deployAppService": {
             "value": false
