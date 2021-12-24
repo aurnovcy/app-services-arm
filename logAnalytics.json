@@ -25,7 +25,7 @@
     "tags": {
       "type": "object",
       "defaultValue": {
-        "Company": "Tailwind Manufacturing"
+        "Company": "Lucerne Publishers"
       }
     } 
   },
