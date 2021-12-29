@@ -16,7 +16,7 @@ az aks create --resource-group $env:resourceGroup `
               --enable-aad `
               --enable-azure-rbac `
               --generate-ssh-keys `
-              --tags "Company=Tailwind" `
+              --tags "Company=Lucerne Publishing" `
               --enable-addons monitoring
 
 az aks get-credentials --resource-group $env:resourceGroup `
@@ -73,7 +73,7 @@ Write-Host "`n"
 az connectedk8s connect --name $env:clusterName `
                         --resource-group $env:resourceGroup `
                         --location $env:azureLocation `
-                        --tags 'Company=tailwind' `
+                        --tags 'Company=Lucerne Publishing' `
                         --custom-locations-oid '51dfe1e8-70c6-4de5-a08e-e18aff23d815'
                         # This is the Custom Locations Enterprise Application ObjectID from AAD
 
@@ -126,7 +126,7 @@ Write-Host "Deploying App Service Kubernetes Environment"
 Write-Host "`n"
 $connectedClusterId = az connectedk8s show --name $env:clusterName --resource-group $env:resourceGroup --query id -o tsv
 $extensionId = az k8s-extension show --name $extensionName --cluster-type connectedClusters --cluster-name $env:clusterName --resource-group $env:resourceGroup --query id -o tsv
-$customLocationId = $(az customlocation create --name 'tailwind-cl' --resource-group $env:resourceGroup --namespace appservices --host-resource-id $connectedClusterId --cluster-extension-ids $extensionId  --query id -o tsv)
+$customLocationId = $(az customlocation create --name 'lucerne-cl' --resource-group $env:resourceGroup --namespace appservices --host-resource-id $connectedClusterId --cluster-extension-ids $extensionId  --query id -o tsv)
 az appservice kube create --resource-group $env:resourceGroup --name $kubeEnvironmentName --custom-location $customLocationId --static-ip "$staticIp" --location $env:azureLocation --output none 
 
 Do {
